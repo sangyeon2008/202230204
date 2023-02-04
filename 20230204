@@ -1,0 +1,15 @@
+def solution(babbling):
+    cnt = 0
+    a= ["aya", "ye", "woo", "ma"]
+    for i in babbling:
+        for j in babbling.remove(i):
+            if i in a:
+                cnt +=1
+            elif i.append(j) in a:
+                cnt +=1
+    return cnt
+
+
+
+babbling = ["ayaye", "uuu", "yeye", "yemawoo", "ayaayaa"]
+print(solution(babbling))
